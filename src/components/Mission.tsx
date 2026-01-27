@@ -4,12 +4,12 @@ const features = [
   {
     icon: Leaf,
     title: 'Organic Ingredients',
-    description: 'We use only organic, wild & pesticide-free ingredients in all our tea blends.',
+    description: 'We use only organic, wild & pesticide-free ingredients in all our herbal blends and products.',
   },
   {
     icon: Heart,
     title: 'Holistic Healing',
-    description: 'Our teas are crafted to support your body\'s natural healing processes.',
+    description: 'Our products are crafted to support your body\'s natural healing process and to elevate and cleanse your environment.',
   },
   {
     icon: Users,
@@ -30,13 +30,16 @@ export function Mission() {
         {/* Mission Statement */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
-            Our Mission
+            🌿 Love Me Teas – Mission Statement
           </h2>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700">
-            Love Me Tea is dedicated to providing alternative healing solutions through 
-            high-quality, organic herbal teas. We believe in empowering individuals to take 
-            control of their health naturally.
-          </p>
+          <div className="text-lg md:text-xl max-w-4xl mx-auto text-gray-700 space-y-4">
+            <p>
+              At Love Me Teas, our mission is to restore wellness, balance, and vitality by offering the purest herbal ingredients crafted with intention and care. We believe in the power of nature to transform lives and spaces, and we are committed to bringing "healthy" back—one cup, one blend, one healing moment at a time.
+            </p>
+            <p>
+              We create holistic teas and holistic products that honor the body, uplift the spirit, and nurture the home. Through integrity, transparency, and a deep respect for natural healing traditions, we empower individuals and communities to reconnect with wellness in its most authentic form.
+            </p>
+          </div>
         </div>
 
         {/* Features Grid */}

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Heart, ShoppingBag } from 'lucide-react';
+import { Menu, X, ShoppingBag } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { CartSidebar } from './CartSidebar';
+import logoImage from 'figma:asset/b7a0c296394872eb98f093485db61cd0d79109a6.png';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,6 @@ export function Header() {
     { label: 'Home', href: '#home' },
     { label: 'History & Legends', href: '#history' },
     { label: 'Store', href: '#store' },
-    { label: 'Gallery', href: '#gallery' },
     { label: 'About Us', href: '#about' },
     { label: 'Reviews', href: '#reviews' },
     { label: 'Contact us', href: '#contact' },
@@ -37,13 +37,15 @@ export function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-24 sm:h-28">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-2 group">
-              <span className="text-2xl tracking-tight">LOVE</span>
-              <Heart className="w-5 h-5 fill-purple-600 text-purple-600 group-hover:scale-110 transition-transform" />
-              <span className="text-2xl tracking-tight">ME TEA</span>
-              <span className="text-xs align-top mt-1">™</span>
+            <a href="#home" className="flex items-center group">
+              <img 
+                src={logoImage} 
+                alt="Love Me Tea™" 
+                className="h-16 sm:h-20 md:h-22 w-auto object-contain mix-blend-normal"
+                style={{ maxWidth: '200px' }}
+              />
             </a>
 
             {/* Desktop Navigation */}

@@ -10,17 +10,10 @@ const testimonials = [
   },
   {
     name: 'ASTARA JANE',
-    date: '08-06-2023',
-    rating: 4,
-    text: 'I received the Love Me Tea package the other day and was so happy to dive in! The beeswax candles are so cute on my altar, and the soothing the Blood Pressure reducer helped a ton. This is a beautiful package of self-care items to brighten your day! Treat yourself!!',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Astara',
-  },
-  {
-    name: 'ASTARA JANE',
     date: '04-06-2023',
     rating: 5,
     text: 'I received the Love Me Tea package the other day and was so happy to dive in! The beeswax candles are so cute on my altar, and the soothing the Blood Pressure reducer helped a ton. This is a beautiful package of self-care items to brighten your day! The packaging is beautiful and I love that they\'re tea/oil-free packaging which is rare. The soap is lovely and the soap is sweetener is DIVINE... it represents working! Together, Harmony, Nourishing QUEEN/S who is using Love Me Tea products! - xoxo Astara',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Astara2',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Astara',
   },
   {
     name: 'SANDRA CORCORAN',

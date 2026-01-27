@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Send, Heart } from 'lucide-react';
+import { Send } from 'lucide-react';
+import heartHandImage from 'figma:asset/c7749bf452952e6988dc9f099a143b053f9ebd6f.png';
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -33,12 +34,24 @@ export function ContactForm() {
             {/* Left Side - Info */}
             <div className="bg-purple-600 text-white p-8 md:p-12 flex flex-col justify-center relative overflow-hidden">
               <div className="absolute inset-0 opacity-10">
-                <Heart className="absolute top-10 right-10 w-32 h-32" />
-                <Heart className="absolute bottom-10 left-10 w-24 h-24" />
+                <img 
+                  src={heartHandImage} 
+                  alt="" 
+                  className="absolute top-10 right-10 w-32 h-32 object-contain"
+                />
+                <img 
+                  src={heartHandImage} 
+                  alt="" 
+                  className="absolute bottom-10 left-10 w-24 h-24 object-contain"
+                />
               </div>
               
               <div className="relative z-10 mb-8">
-                <Heart className="w-16 h-16 fill-white mb-6" />
+                <img 
+                  src={heartHandImage} 
+                  alt="Love Me Tea Heart Hand" 
+                  className="w-16 h-16 mb-6"
+                />
                 <h2 className="text-3xl md:text-4xl mb-4 tracking-wider">
                   CONTACT US
                 </h2>
@@ -52,9 +65,8 @@ export function ContactForm() {
               </div>
 
               <div className="relative z-10 space-y-4 text-sm opacity-90">
-                <p>📧 Email: lovemeteaa@gmail.com</p>
-                <p>📱 Phone: (555) 123-4567</p>
-                <p>🕐 Hours: Mon-Fri 9AM-5PM EST</p>
+                <p>📧 Email: lovemeteas@gmail.com</p>
+                <p>🕐 Hours: Monday – Friday | 9:00 AM – 4:00 PM PST</p>
               </div>
             </div>
 

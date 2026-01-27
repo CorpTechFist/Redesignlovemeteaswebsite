@@ -4,34 +4,39 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const slides = [
   {
     id: 1,
-    title: 'LOVE ME TEAS',
-    subtitle: 'Organic Herbal Healing',
-    description: 'Restore wellness, balance, and vitality with the purest herbal ingredients crafted with intention and care.',
+    title: 'DRINK IN YOUR HEALTH!',
+    description: 'Follow & Find us Online - Instagram, Shopify & Threads',
+    subtitle: 'Locally Water Wellness - SLC, UT',
+    longText: 'Our teas are specially designed to support the finest organic ingredients, sourced from environmentally safe and fair-trade campaigns. They are designed to improve health and heal our bodies naturally. We use only organic, wild & pesticide-free ingredients.',
+    extraText: 'Our teas are formulated to provide relief from a variety of ailments without side effects, toxins, or harmful synthetic ingredients. They promote overall well-being, our small batches ensure quality and freshness.',
+    callout: 'Look for our new Premium Essential Oil & CBD Bath Bombs - COMING SOON!',
+    footer: 'NO artificial sweeteners/flavoring.',
+    note: 'LOVE ME TEA NEW TEA PACKAGING 100% compostable!',
     image: 'https://images.unsplash.com/photo-1741599900547-bc5885bdf600?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMHRlYSUyMHNwaWNlcyUyMGJvd2xzfGVufDF8fHx8MTc2NjEyMjI4NXww&ixlib=rb-4.1.0&q=80&w=1080',
   },
   {
     id: 2,
-    title: 'WOMAN-OWNED',
-    subtitle: 'Small Business Excellence',
-    description: 'Supporting natural healing and wellness through holistic teas and products that honor the body, uplift the spirit, and nurture the home.',
+    title: 'HOLISTIC NEWS',
+    description: 'Our quarterly holistic healing newsletter provides current information of alternative methods and news.',
+    longText: 'It aims to be independently healthy. We give tips on how to support our bodies through progressive methods to healing. Discern and repeat healthy healing news about cancer, hepatitis, diabetes, heart disease, kidney dialysis, asthma, back pain, and mental health. Learn a feel-good life!!!',
     image: 'https://images.unsplash.com/photo-1752724411364-77c30c7ac1b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWElMjBjZXJlbW9ueSUyMHBlYWNlZnVsfGVufDF8fHx8MTc2NjEyMjI4NXww&ixlib=rb-4.1.0&q=80&w=1080',
   },
   {
     id: 3,
-    title: '100% ORGANIC',
-    subtitle: 'Pure & Sustainable',
-    description: 'Only organic, wild & pesticide-free ingredients in all our herbal blends. 100% compostable packaging.',
+    title: 'THE CEO',
+    description: 'I founded Love Me Tea with a mission to provide alternative healing solutions for common ailments.',
+    longText: 'Our goal is to create a space where people can find high quality teas that truly work and learn about the herbs they are consuming. We are dedicated to supporting independence, health without relying on big Pharma. We use only organic, wild & pesticide-free ingredients concoctions to support healing and health.',
     image: 'https://images.unsplash.com/photo-1762328868620-76572366d607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZXJiYWwlMjB0ZWElMjBpbmdyZWRpZW50c3xlbnwxfHx8fDE3NjYwODk3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080',
   },
 ];
 
-export function HeroCarousel() {
+export function AboutHero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(timer);
   }, []);
 
@@ -44,7 +49,7 @@ export function HeroCarousel() {
   };
 
   return (
-    <section id="home" className="relative h-[600px] md:h-[700px] mt-20 overflow-hidden">
+    <section className="relative h-[600px] md:h-[700px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -65,31 +70,40 @@ export function HeroCarousel() {
           {/* Content */}
           <div className="relative h-full flex items-center justify-center">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4 tracking-wider">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 tracking-wider">
                 {slide.title}
               </h1>
-              <p className="text-xl md:text-2xl mb-6 opacity-90">
-                {slide.subtitle}
-              </p>
-              <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed opacity-90 mb-8">
+              <p className="text-lg md:text-xl mb-4 max-w-3xl mx-auto">
                 {slide.description}
               </p>
-              
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="#store"
-                  className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl hover:scale-105"
-                >
-                  Shop Our Teas
-                </a>
-                <a
-                  href="#about"
-                  className="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-full border-2 border-white hover:bg-white hover:text-purple-600 transition-all"
-                >
-                  Learn More
-                </a>
-              </div>
+              {slide.subtitle && (
+                <p className="text-base md:text-lg mb-4 opacity-90">
+                  {slide.subtitle}
+                </p>
+              )}
+              <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed opacity-90 mb-3">
+                {slide.longText}
+              </p>
+              {slide.extraText && (
+                <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed opacity-90 mb-3">
+                  {slide.extraText}
+                </p>
+              )}
+              {slide.callout && (
+                <p className="text-base md:text-lg mb-3 opacity-95">
+                  {slide.callout}
+                </p>
+              )}
+              {slide.footer && (
+                <p className="text-sm opacity-90 mb-2">
+                  {slide.footer}
+                </p>
+              )}
+              {slide.note && (
+                <p className="text-xs md:text-sm italic opacity-80">
+                  {slide.note}
+                </p>
+              )}
             </div>
           </div>
         </div>

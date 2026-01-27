@@ -53,10 +53,19 @@ export function FollowUs() {
           
           <div className="space-y-4 text-sm md:text-base leading-relaxed">
             <p>
-              We are deeply committed to the art of healing through the use of premium natural medicinal herbs, some of which have been cherished for over a millennium, our teas are formulated to alleviate trauma and PTSD. Every cup of tea we create. Each blend is meticulously formulated to not only alleviate trauma and PTSD symptoms but also to support overall wellness by nurturing the body, mind, and immune system.
+              We are deeply committed to the art of healing through premium natural medicinal herbs — many cherished for over a millennium. Our teas are thoughtfully crafted to support those paths toward wellness. Our commitment to healing extends far beyond the cup.
             </p>
             <p>
-              Thank you for being here with us and trusting in our mission for your well-being. We are honored to be a part of your journey towards healing and vitality.
+              We also offer:
+            </p>
+            <ul className="list-none space-y-2 pl-4">
+              <li>• Beeswax air-purifying candles that cleanse your space and elevate your spirit</li>
+              <li>• Soothing Love Me Salts to relax the body and release tension</li>
+              <li>• Love Me Oils that nurture the skin and soothe the senses</li>
+              <li>• Love Me Lotion for daily hydration, comfort, and self-care</li>
+            </ul>
+            <p>
+              And because your healing journey continues to evolve, we're expanding our offerings with CBD tinctures and CBD bath salts — coming soon.
             </p>
           </div>
 
