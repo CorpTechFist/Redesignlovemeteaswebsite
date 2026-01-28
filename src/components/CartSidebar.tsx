@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { X, Plus, Minus, Trash2, ShoppingBag } from 'lucide-react';
 import { useCart } from '../context/CartContext';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 
 interface CartSidebarProps {
   isOpen: boolean;
@@ -8,6 +10,11 @@ interface CartSidebarProps {
 
 export function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
   const { cart, removeFromCart, updateQuantity, getTotalPrice, clearCart } = useCart();
+  const [isCheckoutDialogOpen, setIsCheckoutDialogOpen] = useState(false);
+  const handleClose = () => {
+    setIsCheckoutDialogOpen(false);
+    onClose();
+  };
 
   if (!isOpen) return null;
 
@@ -16,7 +23,7 @@ export function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/50 z-50 transition-opacity"
-        onClick={onClose}
+        onClick={handleClose}
       ></div>
 
       {/* Sidebar */}
@@ -28,7 +35,7 @@ export function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
             <h2 className="text-2xl">Your Cart</h2>
           </div>
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="hover:bg-purple-700 p-2 rounded-lg transition-colors"
             aria-label="Close cart"
           >
@@ -102,8 +109,7 @@ export function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
             </div>
             <button
               onClick={() => {
-                alert('Proceeding to checkout! (Demo)');
-                onClose();
+                setIsCheckoutDialogOpen(true);
               }}
               className="w-full bg-purple-600 text-white py-4 rounded-xl hover:bg-purple-700 transition-colors text-lg"
             >
@@ -122,6 +128,30 @@ export function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
           </div>
         )}
       </div>
+
+      <Dialog open={isCheckoutDialogOpen} onOpenChange={setIsCheckoutDialogOpen}>
+        <DialogContent className="max-w-sm">
+          <DialogHeader>
+            <DialogTitle className="text-xl">Checkout coming soon</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-3 text-sm text-gray-700">
+            <p>
+              Our payment gateway is currently being integrated. In the meantime, please email us and we’ll help finalize your order.
+            </p>
+            <p className="font-medium text-purple-700 flex items-center gap-2">
+              <span>📧</span> <span>lovemeteas@gmail.com</span>
+            </p>
+          </div>
+          <div className="pt-4">
+            <button
+              onClick={() => setIsCheckoutDialogOpen(false)}
+              className="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors"
+            >
+              Close
+            </button>
+          </div>
+        </DialogContent>
+      </Dialog>
     </>
   );
 }
