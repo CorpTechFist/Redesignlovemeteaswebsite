@@ -1,27 +1,28 @@
 import { Instagram } from 'lucide-react';
-import loveMeTeaLogo from 'figma:asset/b7a0c296394872eb98f093485db61cd0d79109a6.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="site-footer bg-gray-900 text-white">
+      <div className="footer-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <img 
-                src={loveMeTeaLogo} 
-                alt="Love Me Teas" 
-                className="h-12 w-auto object-contain"
-              />
-              <span className="text-xl font-medium text-white">Love Me Teas</span>
+            <div className="footer-brand">
+              <div className="brand">
+                <img
+                  src="./src/assets/logo_hand.png"
+                  alt="Love Me Teas logo"
+                  className="brand-logo"
+                />
+                <span className="brand-text">Love Me Teas</span>
+              </div>
+              <p className="brand-description text-gray-400 text-sm leading-relaxed">
+                Providing alternative healing solutions through high-quality, organic herbal teas.
+              </p>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Providing alternative healing solutions through high-quality, organic herbal teas.
-            </p>
-            <div className="space-y-1">
+            <div className="space-y-1 mt-4">
               <p className="text-gray-400 text-sm">
                 Love Me Tea is a registered Trademark.
               </p>

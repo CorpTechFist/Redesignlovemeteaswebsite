@@ -4,113 +4,13 @@ import { useCart } from '../context/CartContext';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Label } from './ui/label';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
-
-const products = [
-  // Tea Products
-  {
-    id: 1,
-    name: 'Anxiety Buster',
-    category: 'HERBAL TEAS',
-    description: 'Natural blend to support mental clarity and reduce anxiety',
-    price: 14.99,
-    image: 'https://images.unsplash.com/photo-1659200735264-955ed8519cd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWElMjBwcm9kdWN0cyUyMGJvdHRsZXN8ZW58MXx8fHwxNzY2MTIyNTY4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'POPULAR',
-  },
-  {
-    id: 2,
-    name: 'BP Reducer',
-    category: 'HERBAL TEAS',
-    description: 'Herbal blend to support healthy blood pressure levels',
-    price: 14.99,
-    image: 'https://images.unsplash.com/photo-1733287041570-0d28af17bf83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwdGVhJTIwYmFncyUyMHBhY2thZ2luZ3xlbnwxfHx8fDE3NjYxMjI1Njl8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'WELLNESS',
-  },
-  {
-    id: 3,
-    name: 'Cold Cough Crusher',
-    category: 'HERBAL TEAS',
-    description: 'Year-round relief for respiratory health and congestion',
-    price: 14.99,
-    image: 'https://images.unsplash.com/photo-1733287041570-0d28af17bf83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwdGVhJTIwYmFncyUyMHBhY2thZ2luZ3xlbnwxfHx8fDE3NjYxMjI1Njl8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'ALL YEAR RELIEF',
-  },
-  {
-    id: 4,
-    name: 'Sleep Sound',
-    category: 'HERBAL TEAS',
-    description: 'Promotes restful sleep and reduces anxiety naturally',
-    price: 14.99,
-    image: 'https://images.unsplash.com/photo-1733287041570-0d28af17bf83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwdGVhJTIwYmFncyUyMHBhY2thZ2luZ3xlbnwxfHx8fDE3NjYxMjI1Njl8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'INSOMNIA RELIEF',
-  },
-  // Essential Oils
-  {
-    id: 5,
-    name: 'Bergamot Lavender Essential Oil',
-    category: 'ESSENTIAL OILS',
-    description: 'Calming blend of bergamot and lavender for aromatherapy and relaxation',
-    price: 24.99,
-    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3NlbnRpYWwlMjBvaWwlMjBib3R0bGV8ZW58MXx8fHwxNzY2MTIyNTY4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'AROMATHERAPY',
-  },
-  {
-    id: 6,
-    name: 'Eucalyptus Essential Oil',
-    category: 'ESSENTIAL OILS',
-    description: 'Pure eucalyptus oil for respiratory support and clarity',
-    price: 22.99,
-    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3NlbnRpYWwlMjBvaWwlMjBib3R0bGV8ZW58MXx8fHwxNzY2MTIyNTY4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'RESPIRATORY',
-  },
-  {
-    id: 7,
-    name: 'CBD Tincture Oil',
-    category: 'ESSENTIAL OILS',
-    description: 'Premium CBD oil for wellness and balance',
-    price: 49.99,
-    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3NlbnRpYWwlMjBvaWwlMjBib3R0bGV8ZW58MXx8fHwxNzY2MTIyNTY4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'COMING SOON',
-    comingSoon: true,
-  },
-  // Other Products
-  {
-    id: 8,
-    name: '100% Beeswax Candles',
-    category: '100% BEESWAX CANDLES',
-    description: '100% Premium Organic Beeswax Love Me Candles',
-    price: 8.00,
-    image: 'https://images.unsplash.com/photo-1610858631039-61b9fd88cf22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZXJiYWwlMjB0ZWElMjBjYW5kbGVzfGVufDF8fHx8MTc2NjEyMjU2OHww&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'More options',
-  },
-  {
-    id: 9,
-    name: 'Love Me Lotion Body Butter',
-    category: 'Bath & Body',
-    description: 'Support, sustain, & protect with essential nutrients',
-    price: 19.00,
-    image: 'https://images.unsplash.com/photo-1730378616989-499041edc37a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwc29hcCUyMGJhcnN8ZW58MXx8fHwxNzY2MDYxOTE5fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'More options',
-  },
-  {
-    id: 10,
-    name: 'Love Me Salts – Bath Salts',
-    category: 'Bath & Body',
-    description: 'Luxurious bath salts for relaxation and rejuvenation',
-    price: 16.00,
-    image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3NlbnRpYWwlMjBvaWwlMjBib3R0bGV8ZW58MXx8fHwxNzY2MTIyNTY4fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    tag: 'More options',
-    options: {
-      scents: ['Bergamot Lavender', 'Eucalyptus'],
-      sizes: ['Small', 'Large']
-    }
-  },
-];
+import { products, Product } from '../data/products';
 
 export function Store() {
   const categories = ['All', 'HERBAL TEAS', 'ESSENTIAL OILS', '100% BEESWAX CANDLES', 'Bath & Body'];
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [addedToCart, setAddedToCart] = useState<number | null>(null);
-  const [selectedProduct, setSelectedProduct] = useState<typeof products[0] | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedScent, setSelectedScent] = useState<string>('');
   const [selectedSize, setSelectedSize] = useState<string>('');
   const { addToCart } = useCart();
@@ -119,7 +19,7 @@ export function Store() {
     ? products 
     : products.filter(p => p.category === selectedCategory);
 
-  const handleAddToCart = (product: typeof products[0]) => {
+  const handleAddToCart = (product: Product) => {
     addToCart({
       id: product.id,
       name: product.name,
@@ -132,7 +32,7 @@ export function Store() {
     setTimeout(() => setAddedToCart(null), 2000);
   };
 
-  const handleProductClick = (product: typeof products[0]) => {
+  const handleProductClick = (product: Product) => {
     if (!product.comingSoon) {
       setSelectedProduct(product);
       if (product.options?.scents) {

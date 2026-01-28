@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { CartSidebar } from './CartSidebar';
-import logoImage from 'figma:asset/b7a0c296394872eb98f093485db61cd0d79109a6.png';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,24 +31,24 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        className={`site-header fixed top-0 w-full z-50 transition-all duration-300 ${
           isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-24 sm:h-28">
-            {/* Logo */}
-            <a href="#home" className="flex items-center group">
-              <img 
-                src={logoImage} 
-                alt="Love Me Tea™" 
-                className="h-16 sm:h-20 md:h-22 w-auto object-contain mix-blend-normal"
-                style={{ maxWidth: '200px' }}
+        <div className="header-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="header-bar flex items-center justify-between w-full h-24 sm:h-28 gap-4">
+            {/* Brand */}
+            <a href="#home" className="brand" aria-label="Love Me Teas home">
+              <img
+                src="./src/assets/logo_hand.png"
+                alt="Love Me Teas logo"
+                className="brand-logo"
               />
+              <span className="brand-text">Love Me Teas</span>
             </a>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8">
+            <nav className="main-nav hidden lg:flex items-center gap-8">
               {navItems.map((item) => (
                 <a
                   key={item.label}
@@ -90,7 +89,7 @@ export function Header() {
 
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
-            <nav className="lg:hidden py-4 border-t">
+            <nav className="lg:hidden py-4 border-t w-full">
               {navItems.map((item) => (
                 <a
                   key={item.label}
