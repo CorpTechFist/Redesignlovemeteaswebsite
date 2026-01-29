@@ -12,7 +12,7 @@ export function Footer() {
             <div className="footer-brand">
               <div className="brand">
                 <img
-                  src="./src/assets/logo_hand.png"
+                  src="/logo.png"
                   alt="Love Me Teas logo"
                   className="brand-logo"
                 />

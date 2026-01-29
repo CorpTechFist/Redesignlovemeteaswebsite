@@ -39,11 +39,11 @@ export function Header() {
           <div className="header-bar flex items-center justify-between w-full h-24 sm:h-28 gap-4">
             {/* Brand */}
             <a href="#home" className="brand" aria-label="Love Me Teas home">
-              <img
-                src="./src/assets/logo_hand.png"
-                alt="Love Me Teas logo"
-                className="brand-logo"
-              />
+            <img
+              src="/logo.png"
+              alt="Love Me Teas logo"
+              className="brand-logo"
+            />
               <span className="brand-text">Love Me Teas</span>
             </a>
 
