@@ -1,11 +1,11 @@
 import anxietyBusterImg from '../assets/products/herbal-teas/AB_tea.jpg';
 import anxietyBusterImg2 from '../assets/products/herbal-teas/anxiety_tea.jpeg';
 import bpReducerImg from '../assets/products/herbal-teas/bp_reducer.jpg';
-import bpReducerImg from '../assets/products/herbal-teas/herb_mix3.jpg';
+import bpReducerImg2 from '../assets/products/herbal-teas/herb_mix3.jpg';
 import coldCoughCrusherImg from '../assets/products/herbal-teas/cough_cold.jpeg';
-import coldCoughCrusherImg from '../assets/products/herbal-teas/cough_cold_teacup2.png';
+import coldCoughCrusherImg2 from '../assets/products/herbal-teas/cough_cold_teacup2.png';
 import sleepSoundImg from '../assets/products/herbal-teas/sleep_sound.jpeg';
-import sleepSoundImg from '../assets/products/herbal-teas/sleep_sound_large.png';
+import sleepSoundImg2 from '../assets/products/herbal-teas/sleep_sound_large.png';
 import bergamotLavenderImg from '../assets/products/essential-oils/bergamot-lavender.jpg';
 import eucalyptusImg from '../assets/products/essential-oils/eucalyptus.jpg';
 import cbdTinctureImg from '../assets/products/essential-oils/cbd-tincture.jpg';
@@ -37,6 +37,7 @@ export const products: Product[] = [
     description: 'Natural blend to support mental clarity and reduce anxiety',
     price: 14.99,
     image: anxietyBusterImg,
+    image: anxietyBusterImg2,
     tag: 'POPULAR',
     options: {
       scents: ['Earthy'],
