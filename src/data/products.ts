@@ -54,8 +54,8 @@ export const products: Product[] = [
     image: bpReducerImg,
     image2: bpReducerImg2,
     tag: 'WELLNESS',
-     options: {
-       scents: ['Earthy Sweet'],
+    options: {
+      scents: ['Earthy Sweet'],
       sizes: ['Small', 'Large'],
     },
   },
@@ -68,8 +68,8 @@ export const products: Product[] = [
     image: coldCoughCrusherImg,
     image2: coldCoughCrusherImg2,
     tag: 'ALL YEAR RELIEF',
-     options: {
-       scents: ['Floral'],
+    options: {
+      scents: ['Floral'],
       sizes: ['Small', 'Large'],
     },
   },
@@ -82,8 +82,8 @@ export const products: Product[] = [
     image: sleepSoundImg,
     image2: sleepSoundImg2,
     tag: 'INSOMNIA RELIEF',
-     options: {
-       scents: ['Earthy Floral'],
+    options: {
+      scents: ['Earthy Floral'],
       sizes: ['Small', 'Large'],
     },
   },
