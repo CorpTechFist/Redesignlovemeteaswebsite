@@ -148,7 +148,19 @@ export const products: Product[] = [
     image: bathSaltsImg,
     tag: 'More options',
     options: {
-      scents: ['Bergamot Lavender', 'Eucalyptus'],
+      scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
+      sizes: ['Small', 'Large'],
+    },
+    {
+    id: 11,
+    name: 'Love Me Salts – CBD Bath Salts',
+    category: 'Bath & Body',
+    description: 'Luxurious CBD Healing bath salts for relaxation and rejuvenation',
+    price: 26.0, 36,0
+    image: bathSaltsImg,
+    tag: 'More options',
+    options: {
+      scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
       sizes: ['Small', 'Large'],
     },
   },
