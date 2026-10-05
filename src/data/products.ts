@@ -57,8 +57,8 @@ export const products: Product[] = [
     options: {
       scents: ['Earthy Sweet'],
       sizes: ['Small', 'Large'],
+      },
     },
-  },
   {
     id: 3,
     name: 'Cold Cough Crusher',
@@ -71,8 +71,8 @@ export const products: Product[] = [
     options: {
       scents: ['Floral'],
       sizes: ['Small', 'Large'],
+      },
     },
-  },
   {
     id: 4,
     name: 'Sleep Sound',
@@ -85,8 +85,8 @@ export const products: Product[] = [
     options: {
       scents: ['Earthy Floral'],
       sizes: ['Small', 'Large'],
+      },
     },
-  },
   // Essential Oils
   {
     id: 5,
@@ -99,8 +99,8 @@ export const products: Product[] = [
      options: {
       scents: ['Bergamot Lavender'],
       sizes: ['2.0 0Z'],
+      },
     },
-  },
   {
     id: 6,
     name: 'Eucalyptus Essential Oil',
@@ -113,7 +113,7 @@ export const products: Product[] = [
       scents: ['Eucalyptus'],
       sizes: ['2.0 0Z'],
       },
-  },
+    },
   {
     id: 7,
     name: 'CBD Tincture Oil',
@@ -127,7 +127,7 @@ export const products: Product[] = [
       sizes: ['2.0 OZ'],
       },
     comingSoon: true,
-  },
+    },
   // Other Products
   {
     id: 8,
@@ -149,8 +149,8 @@ export const products: Product[] = [
     options: {
       scents: ['Tea Tree', 'Honeysuckle', 'Bergamot Lavender', 'Unscented',],
       sizes: ['Small 1.5oz by Vol', 'Large 4.0oz by Vol'],
+      },
     },
-  },
   {
     id: 10,
     name: 'Love Me Salts – Bath Salts',
@@ -163,7 +163,7 @@ export const products: Product[] = [
       scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
       sizes: ['Small 10oz by Vol', 'Large 16oz by Vol'],
       },
-  },
+    },
   {
     id: 11,
     name: 'Love Me Salts – CBD Bath Salts',
