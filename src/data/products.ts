@@ -51,6 +51,7 @@ export const products: Product[] = [
     description: 'Herbal blend to support healthy blood pressure levels',
     price: 14.99,
     image: bpReducerImg,
+    image: bpReducerImg2,
     tag: 'WELLNESS',
      options: {
        scents: ['Earthy Sweet'],
@@ -64,6 +65,7 @@ export const products: Product[] = [
     description: 'Year-round relief for respiratory health and congestion',
     price: 14.99,
     image: coldCoughCrusherImg,
+    image: coldCoughCrusherImg2,
     tag: 'ALL YEAR RELIEF',
      options: {
        scents: ['Floral'],
@@ -77,6 +79,7 @@ export const products: Product[] = [
     description: 'Promotes restful sleep and reduces anxiety naturally',
     price: 14.99,
     image: sleepSoundImg,
+    image: sleepSoundImg2,
     tag: 'INSOMNIA RELIEF',
      options: {
        scents: ['Earthy Floral'],
