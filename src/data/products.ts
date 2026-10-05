@@ -1,4 +1,5 @@
 import anxietyBusterImg from '../assets/products/herbal-teas/AB_tea.jpg';
+import anxietyBusterImg2 from '../assets/products/herbal-teas/anxiety_tea.jpeg';
 import bpReducerImg from '../assets/products/herbal-teas/bp_reducer.jpg';
 import coldCoughCrusherImg from '../assets/products/herbal-teas/cough_cold.jpeg';
 import sleepSoundImg from '../assets/products/herbal-teas/sleep_sound.jpeg';
