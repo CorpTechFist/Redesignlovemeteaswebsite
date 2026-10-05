@@ -20,9 +20,9 @@ export type Product = {
   description: string;
   price: number;
   image: string;
-  image2: string;
+  //image2: string;
   tag: string;
-  comingSoon?: boolean;
+  comingSoon: boolean;
   options: {
     scents: string[];
     sizes: string[];
