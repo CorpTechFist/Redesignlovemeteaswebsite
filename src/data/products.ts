@@ -34,6 +34,9 @@ export const products: Product[] = [
     price: 14.99,
     image: anxietyBusterImg,
     tag: 'POPULAR',
+    options: {
+      sizes: ['Small', 'Large'],
+    },
   },
   {
     id: 2,
@@ -43,6 +46,9 @@ export const products: Product[] = [
     price: 14.99,
     image: bpReducerImg,
     tag: 'WELLNESS',
+     options: {
+      sizes: ['Small', 'Large'],
+    },
   },
   {
     id: 3,
@@ -52,6 +58,9 @@ export const products: Product[] = [
     price: 14.99,
     image: coldCoughCrusherImg,
     tag: 'ALL YEAR RELIEF',
+     options: {
+      sizes: ['Small', 'Large'],
+    },
   },
   {
     id: 4,
@@ -61,6 +70,9 @@ export const products: Product[] = [
     price: 14.99,
     image: sleepSoundImg,
     tag: 'INSOMNIA RELIEF',
+     options: {
+      sizes: ['Small', 'Large'],
+    },
   },
   // Essential Oils
   {
