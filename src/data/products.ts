@@ -1,11 +1,11 @@
 import anxietyBusterImg from '../assets/products/herbal-teas/AB_tea.jpg';
 //import anxietyBusterImg2 from '../assets/products/herbal-teas/anxiety_tea.jpeg';
 import bpReducerImg from '../assets/products/herbal-teas/bp_reducer.jpg';
-import bpReducerImg2 from '../assets/products/herbal-teas/herb_mix3.jpeg';
+//import bpReducerImg2 from '../assets/products/herbal-teas/herb_mix3.jpeg';
 import coldCoughCrusherImg from '../assets/products/herbal-teas/cough_cold.jpeg';
-import coldCoughCrusherImg2 from '../assets/products/herbal-teas/cough_cold_teacup2.png';
+//import coldCoughCrusherImg2 from '../assets/products/herbal-teas/cough_cold_teacup2.png';
 import sleepSoundImg from '../assets/products/herbal-teas/sleep_sound.jpeg';
-import sleepSoundImg2 from '../assets/products/herbal-teas/sleep_sound_large.png';
+//import sleepSoundImg2 from '../assets/products/herbal-teas/sleep_sound_large.png';
 import bergamotLavenderImg from '../assets/products/essential-oils/3Bottles_plant.jpg';
 import eucalyptusImg from '../assets/products/essential-oils/3Bottles.jpg';
 import cbdTinctureImg from '../assets/products/essential-oils/all_oils.jpeg';
@@ -52,7 +52,7 @@ export const products: Product[] = [
     description: 'Herbal blend to support healthy blood pressure levels',
     price: 14.99,
     image: bpReducerImg,
-    image2: bpReducerImg2,
+    //image2: bpReducerImg2,
     tag: 'WELLNESS',
     options: {
       scents: ['Earthy Sweet'],
@@ -66,7 +66,7 @@ export const products: Product[] = [
     description: 'Year-round relief for respiratory health and congestion',
     price: 14.99,
     image: coldCoughCrusherImg,
-    image2: coldCoughCrusherImg2,
+    //image2: coldCoughCrusherImg2,
     tag: 'ALL YEAR RELIEF',
     options: {
       scents: ['Floral'],
@@ -80,7 +80,7 @@ export const products: Product[] = [
     description: 'Promotes restful sleep and reduces anxiety naturally',
     price: 14.99,
     image: sleepSoundImg,
-    image2: sleepSoundImg2,
+    //image2: sleepSoundImg2,
     tag: 'INSOMNIA RELIEF',
     options: {
       scents: ['Earthy Floral'],
@@ -96,24 +96,36 @@ export const products: Product[] = [
     price: 24.99,
     image: bergamotLavenderImg,
     tag: 'AROMATHERAPY',
+     options: {
+      scents: ['Bergamot Lavender'],
+      sizes: ['2.0 0Z'],
+    },
   },
   {
     id: 6,
     name: 'Eucalyptus Essential Oil',
     category: 'ESSENTIAL OILS',
     description: 'Pure eucalyptus oil for respiratory support and clarity',
-    price: 22.99,
+    price: 22.0,
     image: eucalyptusImg,
     tag: 'RESPIRATORY',
+    options: {
+      scents: ['Eucalyptus'],
+      sizes: ['2.0 0Z'],
+      },
   },
   {
     id: 7,
     name: 'CBD Tincture Oil',
     category: 'ESSENTIAL OILS',
     description: 'Premium CBD oil for wellness and balance',
-    price: 49.99,
+    price: 35.0,
     image: cbdTinctureImg,
     tag: 'COMING SOON',
+    options: {
+      scents: ['CBG/CBN/CBD AROMA'],
+      sizes: ['2.0 OZ'],
+      },
     comingSoon: true,
   },
   // Other Products
@@ -124,7 +136,7 @@ export const products: Product[] = [
     description: '100% Premium Organic Beeswax Love Me Candles',
     price: 8.0,
     image: beeswaxCandlesImg,
-    tag: 'Air Purifying Allergen Relief',
+    tag: 'AIR PURIFYING',
   },
   {
     id: 9,
@@ -136,7 +148,7 @@ export const products: Product[] = [
     tag: 'SKIN THERAPY',
     options: {
       scents: ['Tea Tree', 'Honeysuckle', 'Bergamot Lavender', 'Unscented',],
-      sizes: ['Small', 'Large'],
+      sizes: ['Small 1.5oz by Vol', 'Large 4.0oz by Vol'],
     },
   },
   {
@@ -149,7 +161,7 @@ export const products: Product[] = [
     tag: 'RECHARGE',
     options: {
       scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
-      sizes: ['Small', 'Large'],
+      sizes: ['Small 10oz by Vol', 'Large 16oz by Vol'],
       },
   },
   {
