@@ -21,11 +21,11 @@ export type Product = {
   price: number;
   image: string;
   image2: string;
-  tag?: string;
+  tag: string;
   comingSoon?: boolean;
-  options?: {
-    scents?: string[];
-    sizes?: string[];
+  options: {
+    scents: string[];
+    sizes: string[];
   };
 };
 
@@ -135,7 +135,7 @@ export const products: Product[] = [
     image: lotionBodyButterImg,
     tag: 'SKIN THERAPY',
     options: {
-      scents: ['Tea Tree', 'Honeysuckle', 'Unscented', 'Bergamot Lavender'],
+      scents: ['Tea Tree', 'Honeysuckle', 'Bergamot Lavender', 'Unscented',],
       sizes: ['Small', 'Large'],
     },
   },
@@ -156,7 +156,7 @@ export const products: Product[] = [
     name: 'Love Me Salts – CBD Bath Salts',
     category: 'Bath & Body',
     description: 'Luxurious CBD Healing bath salts for relaxation and rejuvenation',
-    price: 26.0, 36,0
+    price: 26.0, 36,0,
     image: bathSaltsImg,
     tag: 'HOLISTIC HEALING,
     options: {
