@@ -9,8 +9,8 @@ import sleepSoundImg2 from '../assets/products/herbal-teas/sleep_sound_large.png
 import bergamotLavenderImg from '../assets/products/essential-oils/3Bottles_plant.jpg';
 import eucalyptusImg from '../assets/products/essential-oils/3Bottles.jpg';
 import cbdTinctureImg from '../assets/products/essential-oils/all_oils.jpeg';
-import beeswaxCandlesImg from '../assets/products/beeswax-candles/beeswax-candles.jpg';
-import lotionBodyButterImg from '../assets/products/bath-body/lotion-body-butter.jpg';
+import beeswaxCandlesImg from '../assets/products/beeswax-candles/candles_shelf.png';
+import lotionBodyButterImg from '../assets/products/bath-body/openLid_lotion.jpg';
 import bathSaltsImg from '../assets/products/essential-oils/bathSalts.jpg';
 
 export type Product = {
@@ -133,7 +133,7 @@ export const products: Product[] = [
     description: 'Support, sustain, & protect with essential nutrients',
     price: 19.0,
     image: lotionBodyButterImg,
-    tag: 'Skin Therapy',
+    tag: 'SKIN THERAPY',
     options: {
       scents: ['Tea Tree', 'Honeysuckle', 'Unscented', 'Bergamot Lavender'],
       sizes: ['Small', 'Large'],
@@ -146,7 +146,7 @@ export const products: Product[] = [
     description: 'Luxurious bath salts for relaxation and rejuvenation',
     price: 16.0,
     image: bathSaltsImg,
-    tag: 'Recharge',
+    tag: 'RECHARGE',
     options: {
       scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
       sizes: ['Small', 'Large'],
@@ -158,7 +158,7 @@ export const products: Product[] = [
     description: 'Luxurious CBD Healing bath salts for relaxation and rejuvenation',
     price: 26.0, 36,0
     image: bathSaltsImg,
-    tag: 'Holistic Healing,
+    tag: 'HOLISTIC HEALING,
     options: {
       scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
       sizes: ['Small', 'Large'],
