@@ -124,7 +124,7 @@ export const products: Product[] = [
     description: '100% Premium Organic Beeswax Love Me Candles',
     price: 8.0,
     image: beeswaxCandlesImg,
-    tag: 'More options',
+    tag: 'Air Purifying Allergen Relief',
   },
   {
     id: 9,
@@ -133,7 +133,7 @@ export const products: Product[] = [
     description: 'Support, sustain, & protect with essential nutrients',
     price: 19.0,
     image: lotionBodyButterImg,
-    tag: 'More options',
+    tag: 'Skin Therapy',
     options: {
       scents: ['Tea Tree', 'Honeysuckle', 'Unscented', 'Bergamot Lavender'],
       sizes: ['Small', 'Large'],
@@ -146,7 +146,7 @@ export const products: Product[] = [
     description: 'Luxurious bath salts for relaxation and rejuvenation',
     price: 16.0,
     image: bathSaltsImg,
-    tag: 'More options',
+    tag: 'Recharge',
     options: {
       scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
       sizes: ['Small', 'Large'],
@@ -158,7 +158,7 @@ export const products: Product[] = [
     description: 'Luxurious CBD Healing bath salts for relaxation and rejuvenation',
     price: 26.0, 36,0
     image: bathSaltsImg,
-    tag: 'More options',
+    tag: 'Holistic Healing,
     options: {
       scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
       sizes: ['Small', 'Large'],
