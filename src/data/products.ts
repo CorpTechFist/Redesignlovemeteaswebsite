@@ -38,7 +38,7 @@ export const products: Product[] = [
     description: 'Natural blend to support mental clarity and reduce anxiety',
     price: 14.99,
     image: anxietyBusterImg,
-    image2: anxietyBusterImg2,
+    //image2: anxietyBusterImg2,
     tag: 'POPULAR',
     options: {
       scents: ['Earthy'],
