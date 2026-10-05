@@ -20,6 +20,7 @@ export type Product = {
   description: string;
   price: number;
   image: string;
+  image2: string;
   tag?: string;
   comingSoon?: boolean;
   options?: {
@@ -37,7 +38,7 @@ export const products: Product[] = [
     description: 'Natural blend to support mental clarity and reduce anxiety',
     price: 14.99,
     image: anxietyBusterImg,
-    image: anxietyBusterImg2,
+    image2: anxietyBusterImg2,
     tag: 'POPULAR',
     options: {
       scents: ['Earthy'],
@@ -51,7 +52,7 @@ export const products: Product[] = [
     description: 'Herbal blend to support healthy blood pressure levels',
     price: 14.99,
     image: bpReducerImg,
-    image: bpReducerImg2,
+    image2: bpReducerImg2,
     tag: 'WELLNESS',
      options: {
        scents: ['Earthy Sweet'],
@@ -65,7 +66,7 @@ export const products: Product[] = [
     description: 'Year-round relief for respiratory health and congestion',
     price: 14.99,
     image: coldCoughCrusherImg,
-    image: coldCoughCrusherImg2,
+    image2: coldCoughCrusherImg2,
     tag: 'ALL YEAR RELIEF',
      options: {
        scents: ['Floral'],
@@ -79,7 +80,7 @@ export const products: Product[] = [
     description: 'Promotes restful sleep and reduces anxiety naturally',
     price: 14.99,
     image: sleepSoundImg,
-    image: sleepSoundImg2,
+    image2: sleepSoundImg2,
     tag: 'INSOMNIA RELIEF',
      options: {
        scents: ['Earthy Floral'],
