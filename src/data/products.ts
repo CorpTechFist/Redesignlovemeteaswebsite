@@ -6,12 +6,12 @@ import coldCoughCrusherImg from '../assets/products/herbal-teas/cough_cold.jpeg'
 import coldCoughCrusherImg2 from '../assets/products/herbal-teas/cough_cold_teacup2.png';
 import sleepSoundImg from '../assets/products/herbal-teas/sleep_sound.jpeg';
 import sleepSoundImg2 from '../assets/products/herbal-teas/sleep_sound_large.png';
-import bergamotLavenderImg from '../assets/products/essential-oils/bathSalts.jpg';
-import eucalyptusImg from '../assets/products/essential-oils/eucalyptus.jpg';
+import bergamotLavenderImg from '../assets/products/essential-oils/3Bottles_plant.jpg';
+import eucalyptusImg from '../assets/products/essential-oils/3Bottles.jpg';
 import cbdTinctureImg from '../assets/products/essential-oils/all_oils.jpeg';
 import beeswaxCandlesImg from '../assets/products/beeswax-candles/beeswax-candles.jpg';
 import lotionBodyButterImg from '../assets/products/bath-body/lotion-body-butter.jpg';
-import bathSaltsImg from '../assets/products/bath-body/bath-salts.jpg';
+import bathSaltsImg from '../assets/products/essential-oils/bathSalts.jpg';
 
 export type Product = {
   id: number;
