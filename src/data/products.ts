@@ -35,6 +35,7 @@ export const products: Product[] = [
     image: anxietyBusterImg,
     tag: 'POPULAR',
     options: {
+      scents: ['Earthy'],
       sizes: ['Small', 'Large'],
     },
   },
@@ -47,6 +48,7 @@ export const products: Product[] = [
     image: bpReducerImg,
     tag: 'WELLNESS',
      options: {
+       scents: ['Earthy Sweet'],
       sizes: ['Small', 'Large'],
     },
   },
@@ -59,6 +61,7 @@ export const products: Product[] = [
     image: coldCoughCrusherImg,
     tag: 'ALL YEAR RELIEF',
      options: {
+       scents: ['Floral'],
       sizes: ['Small', 'Large'],
     },
   },
@@ -71,6 +74,7 @@ export const products: Product[] = [
     image: sleepSoundImg,
     tag: 'INSOMNIA RELIEF',
      options: {
+       scents: ['Earthy Floral'],
       sizes: ['Small', 'Large'],
     },
   },
@@ -121,6 +125,10 @@ export const products: Product[] = [
     price: 19.0,
     image: lotionBodyButterImg,
     tag: 'More options',
+    options: {
+      scents: ['Tea Tree', 'Honeysuckle', 'Unscented', 'Bergamot Lavender'],
+      sizes: ['Small', 'Large'],
+    },
   },
   {
     id: 10,
