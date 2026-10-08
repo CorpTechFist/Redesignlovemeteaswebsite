@@ -11,7 +11,7 @@ import eucalyptusImg from '../assets/products/essential-oils/3Bottles.jpg';
 import cbdTinctureImg from '../assets/products/essential-oils/all_oils.jpeg';
 import beeswaxCandlesImg from '../assets/products/beeswax-candles/Ganesh.png';
 import lotionBodyButterImg from '../assets/products/bath-body/small_lotions_shop.png';
-import bathSaltsImg from '../assets/products/essential-oils/bathsalts.jpg';
+import bathSaltsImg from '../assets/products/essential-oils/bath_salts.jpg';
 import cbdbathSaltsImg from '../assets/products/essential-oils/cbd_bathsalts.jpg';
 
 export type Product = {
