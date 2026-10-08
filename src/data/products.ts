@@ -1,5 +1,5 @@
 import anxietyBusterImg from '../assets/products/herbal-teas/AB_tea.jpg';
-//import anxietyBusterImg2 from '../assets/products/herbal-teas/anxiety_tea.jpeg';
+import anxietyBusterImg2 from '../assets/products/herbal-teas/anxiety_tea.jpeg';
 import bpReducerImg from '../assets/products/herbal-teas/bp_reducer.jpg';
 //import bpReducerImg2 from '../assets/products/herbal-teas/herb_mix3.jpeg';
 import coldCoughCrusherImg from '../assets/products/herbal-teas/cough_cold.jpeg';
@@ -20,7 +20,7 @@ export type Product = {
   description: string;
   price: number;
   image: string;
-  //image2: string;
+  image2: string;
   tag: string;
   comingSoon: boolean;
   options: {
@@ -38,7 +38,7 @@ export const products: Product[] = [
     description: 'Natural blend to support mental clarity and reduce anxiety',
     price: 14.99,
     image: anxietyBusterImg,
-    //image2: anxietyBusterImg2,
+    image2: anxietyBusterImg2,
     tag: 'POPULAR',
     options: {
       scents: ['Earthy'],
