@@ -9,7 +9,7 @@ import sleepSoundImg from '../assets/products/herbal-teas/sleep_sound.jpeg';
 import bergamotLavenderImg from '../assets/products/essential-oils/3Bottles_plant.jpg';
 import eucalyptusImg from '../assets/products/essential-oils/3Bottles.jpg';
 import cbdTinctureImg from '../assets/products/essential-oils/all_oils.jpeg';
-import beeswaxCandlesImg from '../assets/products/beeswax-candles/candlesShelf.jpeg';
+import beeswaxCandlesImg from '../assets/products/beeswax-candles/Ganesh.png';
 import lotionBodyButterImg from '../assets/products/bath-body/small_lotions_shop.png';
 import bathSaltsImg from '../assets/products/essential-oils/bathSalts.jpg';
 
