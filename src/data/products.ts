@@ -12,6 +12,7 @@ import cbdTinctureImg from '../assets/products/essential-oils/all_oils.jpeg';
 import beeswaxCandlesImg from '../assets/products/beeswax-candles/Ganesh.png';
 import lotionBodyButterImg from '../assets/products/bath-body/small_lotions_shop.png';
 import bathSaltsImg from '../assets/products/essential-oils/sm_bathsalts.jpg';
+import cbdbathSaltsImg from '../assets/products/essential-oils/cbd_bathsalts.jpg';
 
 export type Product = {
   id: number;
@@ -170,7 +171,7 @@ export const products: Product[] = [
     category: 'Bath & Body',
     description: 'Luxurious CBD Healing bath salts for relaxation and rejuvenation',
     price: 26.0,
-    image: bathSaltsImg,
+    image: bathSaltsImg2,
     tag: 'HOLISTIC HEALING',
     options: {
       scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
