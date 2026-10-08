@@ -171,7 +171,7 @@ export const products: Product[] = [
     category: 'Bath & Body',
     description: 'Luxurious CBD Healing bath salts for relaxation and rejuvenation',
     price: 26.0,
-    image: bathSaltsImg2,
+    image: cbdbathSaltsImg,
     tag: 'HOLISTIC HEALING',
     options: {
       scents: ['Bergamot Lavender', 'Rose Lavender', 'Eucalyptus'],
