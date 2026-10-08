@@ -169,7 +169,7 @@ export const products: Product[] = [
     name: 'Love Me Salts – CBD Bath Salts',
     category: 'Bath & Body',
     description: 'Luxurious CBD Healing bath salts for relaxation and rejuvenation',
-    price: 26.0, 36,0,
+    price: 26.0,
     image: bathSaltsImg,
     tag: 'HOLISTIC HEALING',
     options: {
