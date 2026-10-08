@@ -96,7 +96,7 @@ export const products: Product[] = [
     price: 24.99,
     image: bergamotLavenderImg,
     tag: 'AROMATHERAPY',
-     options: {
+    options: {
       scents: ['Bergamot Lavender'],
       sizes: ['2.0 0Z'],
       },
